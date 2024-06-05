@@ -91,9 +91,6 @@ NUMBERS: dict[str, tuple[NumberEntityDescription, ...]] = {
             icon="mdi:timer-outline",
             entity_category=EntityCategory.CONFIG,
             mode="slider",
-            unit_of_measurement="minutes",
-            min=0,
-            max=1440,
         ),
         # Number of seconds for the watering session. The device will automatically turn off after this time
         NumberEntityDescription(
@@ -102,9 +99,6 @@ NUMBERS: dict[str, tuple[NumberEntityDescription, ...]] = {
             icon="mdi:timer-outline",
             entity_category=EntityCategory.CONFIG,
             mode="slider",
-            unit_of_measurement="minutes",
-            min=0,
-            max=1440,
         ),
     ),
     # Human Presence Sensor
