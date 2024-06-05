@@ -87,7 +87,7 @@ NUMBERS: dict[str, tuple[NumberEntityDescription, ...]] = {
         # Number of seconds for the watering session. The device will automatically turn off after this time
         NumberEntityDescription(
             key=DPCode.COUNTDOWN_1,
-            name="Countdown",
+            name="Countdown 1",
             icon="mdi:timer-outline",
             #device_class=TuyaDeviceClass.COUNTDOWN,
             entity_category=EntityCategory.CONFIG,
@@ -95,7 +95,7 @@ NUMBERS: dict[str, tuple[NumberEntityDescription, ...]] = {
         # Number of seconds for the watering session. The device will automatically turn off after this time
         NumberEntityDescription(
             key=DPCode.COUNTDOWN_2,
-            name="Countdown",
+            name="Countdown 2",
             icon="mdi:timer-outline",
             #device_class=TuyaDeviceClass.COUNTDOWN,
             entity_category=EntityCategory.CONFIG,
