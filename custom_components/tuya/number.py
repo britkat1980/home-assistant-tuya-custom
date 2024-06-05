@@ -83,6 +83,24 @@ NUMBERS: dict[str, tuple[NumberEntityDescription, ...]] = {
             icon="mdi:microphone",
         ),
     ),
+    "ggq": (
+        # Number of seconds for the watering session. The device will automatically turn off after this time
+        NumberEntityDescription(
+            key=DPCode.COUNTDOWN_1,
+            name="Countdown",
+            icon="mdi:timer-outline",
+            #device_class=TuyaDeviceClass.COUNTDOWN,
+            entity_category=EntityCategory.CONFIG,
+        ),
+        # Number of seconds for the watering session. The device will automatically turn off after this time
+        NumberEntityDescription(
+            key=DPCode.COUNTDOWN_2,
+            name="Countdown",
+            icon="mdi:timer-outline",
+            #device_class=TuyaDeviceClass.COUNTDOWN,
+            entity_category=EntityCategory.CONFIG,
+        ),
+    ),
     # Human Presence Sensor
     # https://developer.tuya.com/en/docs/iot/categoryhps?id=Kaiuz42yhn1hs
     "hps": (
