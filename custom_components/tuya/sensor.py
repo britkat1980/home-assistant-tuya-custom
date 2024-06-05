@@ -577,14 +577,6 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
             device_class=TuyaDeviceClass.COUNTDOWN,
             entity_category=EntityCategory.DIAGNOSTIC,
         ),
-        # Number of seconds for the watering session. The device will automatically turn off after this time
-        TuyaSensorEntityDescription(
-            key=DPCode.NORMAL_TIMER,
-            name="Timer",
-            icon="mdi:timer-outline",
-            device_class=TuyaDeviceClass.NORMAL_TIMER,
-            entity_category=EntityCategory.DIAGNOSTIC,
-        ),
         *BATTERY_SENSORS,
     ),
     # Water Detector
